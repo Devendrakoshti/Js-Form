@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Name:<input type="text" id="nm" onblur="xyz()"> <br><br> Number:
+    <input type="text" id="nb"> <span id="sp"></span><br><br> Password:
+    <input type="text" id="psw"> <br><br> Confirm Password:<input type="text" id="cpsw"><br><br>
+    <button onclick=" abc()">Clik on..</button>
+    <script>
+        nm = document.getElementById("nm");
+        nb = document.getElementById("nb");
+        psw = document.getElementById("psw");
+        cpsw = document.getElementById("cpsw");
+        sp = document.getElementById("sp")
+        nm_ex = /^[a-z A-Z]+$/;
+        nm_ex = /^[0-9]{10}$/;
+
+        function xyz() {
+            if (nm.value == "") {
+                window.alert("Name is Required..!");
+                return false;
+            }
+            if (!nm_ex.test(nm.value)) {
+                window.alert("Only Letter....!");
+                return false;
+            }
+
+
+        }
+
+        function abc() {
+            if (nb.value == "") {
+                sp.innerHTML = "Number Required...!";
+
+            }
+        }
+    </script>
+</body>
+
+</html>

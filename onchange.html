@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+Price:<input type="text" value="300" id="p">
+<select id="q" onchange="getprice()">
+<option hidden>---Select Quantity---</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+</select>
+<h2 id="m"></h2>
+<script>
+    h1 = document.getElementById("p")
+    h2 = document.getElementById("q")
+    h3 = document.getElementById("m")
+
+
+    function getprice() {
+        h3.innerHTML = (h1.value * h2.value)
+        h3.style.border = "2px solid red"
+
+    }
+</script>
+
+<body>
+
+</body>
+
+</html>

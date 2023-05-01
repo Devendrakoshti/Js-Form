@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form_Validation</title>
+</head>
+
+<body>
+    Name:<input type="text" id="na"><br><br> Number: <input type="text" id="nm"> <br><br> Password: <input type="text" id="psw"> <br><br> Confirm Password<input type="text" id="cpsw"><br><br>
+    <button onclick="dev()">Submit</button>
+    <script>
+        na = document.getElementById("na");
+        nm = document.getElementById("nm");
+        psw = document.getElementById("psw");
+        cpsw = document.getElementById("cpsw");
+
+        function dev() {
+            if (na.value == "") {
+                alert("Name Is Required.....!");
+                return false;
+            }
+            if (nm.value == "") {
+                alert("Number Is Required.....!");
+                return false;
+
+            }
+            if (psw.value == "") {
+                alert("Password Is Required.....!");
+                return false;
+
+            }
+            if (cpsw.value != psw.value) {
+                alert("Plz Same Password Write.....!")
+            }
+        }
+    </script>
+</body>
+
+</html>

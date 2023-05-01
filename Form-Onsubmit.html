@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" onsubmit="submit1()">
+        Name:
+        <input type="text" id="nm" value="">
+        <input type="submit">
+
+    </form>
+    <script>
+        h1 = document.getElementById("nm")
+        console.log(h1)
+
+        function submit1() {
+            if (h1.value == "") {
+                alert("Required....!")
+            }
+        }
+    </script>
+</body>
+
+</html>
