@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #x {}
+    </style>
+</head>
+
+<body>
+    <div id="x">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus at dolorum quos nisi, sequi vero aspernatur mollitia fugit magnam minus sapiente totam culpa itaque adipisci animi ipsa velit vitae. Voluptates.</div>
+    <button id="y">Hide</button>
+    <button id="z">Show</button>
+
+    <script>
+        x = document.getElementById("x")
+        y = document.getElementById("y")
+        z = document.getElementById("z")
+
+
+        // y.addEventListener("click", () => {
+        //     x.style.display = "none";
+        // })
+
+        y.addEventListener("click",
+            () => {
+
+                x.style.display = "none";
+
+            })
+        z.addEventListener("click", () => {
+            x.style.display = "block"
+        })
+
+        x.addEventListener("click", () => {
+            x.style.display = "none";
+        })
+    </script>
+</body>
+
+</html>

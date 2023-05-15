@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    gender;
+    <input type="radio" name="gender">male
+    <input type="radio" name="gender">female
+    <br><br>
+    <button onclick="test()">submit</button>
+    <script>
+        gen = document.getElementsByName("gender")
+        console.log(gen[0].checked)
+
+        function test() {
+            if (gen[0].checked == false && gen[1].checked == false) {
+                alert("Select Gender....!")
+            }
+        }
+    </script>
+</body>
+
+</html>

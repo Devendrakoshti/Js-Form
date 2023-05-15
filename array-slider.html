@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <img class="x" src="images (1).jpg" alt="">
+    <img class="x" src="images (2).jpg" alt="">
+    <img class="x" src="images (4).jpg" alt="">
+    <img class="x" src="images (3).jpg" alt="">
+    <img class="x" src="images.jpg" alt="">
+    <!-- <img class="w" src="images (2).jpg" alt="">
+    <img class="w" src="images (1).jpg" alt="">
+    <img class="w" src="images (4).jpg" alt="">
+    <img class="w" src="images.jpg" alt="">
+    <img class="w" src="images (3).jpg" alt=""> -->
+
+
+
+
+
+    <script>
+        dev = 0
+        h1 = document.getElementsByClassName("x")
+        console.log(h1)
+
+        function hem() {
+            for (p = 0; p < h1.length; p++) {
+                h1[p].style.display = "none"
+            }
+            h1[dev].style.display = "block"
+            dev++
+            if (dev == h1.length) {
+                dev = 0
+            }
+            setTimeout("hem()", 1000)
+        }
+        hem()
+    </script>
+</body>
+
+</html>
